@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Leetcode Challenge</title>
+</head>
+<body>
+    <h1><b>944 Delete Columns to Make Sorted:</b></h1>
+    <h4>Link- <a href = "https://leetcode.com/problems/delete-columns-to-make-sorted/">Delete Columns to Make Sorted</a></h4>
+    <p>
+        <b>
+        <pre>
+class Solution {
+    public:
+        int minDeletionSize(vector<string>& strs) {
+            int n = strs[0].length();
+            int count = 0;
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j < strs.size() - 1; j++){
+                    if(strs[j][i] > strs[j + 1][i]){
+                        count++;
+                        break;
+                    }
+                }
+        }
+        return count;
+    }
+};
+        </pre>
+        </b>
+    </p>
+</body>
+</html>
