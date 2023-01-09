@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Leetcode Challenge</title>
+</head>
+<body>
+    <h1><b><!DOCTYPE html>
+        <html>
+        <head>
+            <title>Daily Leetcode Challenge</title>
+        </head>
+        <body>
+            <h1><b>144 Binary Tree Preorder Traversal:</b></h1>
+            <h4>Link- <a href = "https://leetcode.com/problems/binary-tree-preorder-traversal/">Binary Tree Preorder Traversal</a></h4>
+            <p>
+                <b>
+                <pre>
+class Solution {
+    public:
+        void preorder(TreeNode* root, vector<int>&vec){
+            if(root == NULL){
+                return;
+            }
+            vec.push_back(root->val);
+            preorder(root->left, vec);
+            preorder(root->right, vec);
+        }
+        vector<int> preorderTraversal(TreeNode* root) {
+            vector<int>vec;
+            preorder(root, vec);
+            return vec;
+        }
+    };
+            </pre>
+            </b>
+        </p>
+    </body>
+</html>
+        
